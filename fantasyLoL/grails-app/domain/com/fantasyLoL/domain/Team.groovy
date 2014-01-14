@@ -1,5 +1,7 @@
 package com.fantasyLoL.domain
 
+import com.fantasyLoL.domain.stats.Player
+
 
 class Team {
 	
@@ -14,4 +16,12 @@ class Team {
 	
     static constraints = {
     }
+	
+	def calculateScore(Settings setting){
+		double score = 0;
+		for(Player player in Players){
+			score += player.calculateScore(setting.getPositionSetting(player.position));
+		}
+		return score;
+	}
 }

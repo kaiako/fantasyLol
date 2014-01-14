@@ -1,0 +1,478 @@
+/* added by patrick */
+
+.dl-spacing dd {
+  margin-bottom: .5em;
+}
+.thumbnails > li {
+  margin-bottom: 0;
+}
+.navbar-inverse .navbar-inner, .off-canvas-header {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
+}
+.thumb-blue {
+  background-color: #d3e4ff;
+}
+.thumb-green {
+  background-color: #e2e4cc;
+}
+.thumb-gray {
+  background-color: #e9e9e9;
+}
+.thumbnail a img {
+  opacity: 0.5;
+}
+.thumbnail a:hover img {
+  opacity: 1.0;
+}
+.view-port {
+  width:100%;
+  height:360px;
+  overflow:scroll;
+}
+.switch-label {
+  padding-left: 0 !important;
+}
+.tooltiptext {
+  text-decoration: none !important;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 1030;
+  display: block;
+  visibility: visible;
+  font-size: 13px;
+  line-height: 18px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.tooltip.in {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.tooltip-inner {
+  max-width: 300px;
+  padding: 10px 5px 10px 10px;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: left;
+  text-decoration: none;
+  background-color: #000000;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+
+.thumbnail {
+  padding: 12px;
+}
+.thumbnail a {
+  text-decoration: none !important;
+}
+.areacode {
+  width: 3em;
+}
+.phonenumber {
+  width: 8em;
+}
+.table-nav, .dataTables_filter {
+  margin-top: 10px;
+  margin-bottom: 0 !important;
+}
+.table th {
+  font-size: .875em;
+}
+.white-bg {
+  background-color: rgba(255, 255, 255, 0.92);
+}
+.text-right {
+  text-align: right !important;
+}
+.medium-top-margin {
+  margin-top: 15px;
+}
+.well dl {
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+.well dt {
+  color: #777777;
+  font-weight: bold;
+}
+.well dd {
+  font-size: 1.1em;
+  line-height: 24px;
+}
+
+/* added 05-13-13 */
+.navbar-inverse .brand, .navbar-inverse .nav > li > a {
+  color: #CCCCCC;
+}
+.lead {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #555555;
+  line-height: 150%;
+  margin-bottom: .5em;
+}
+footer ul.inline > li, ol.inline > li {
+  padding-left: 0px;
+  padding-right: 10px;
+}
+/* added 05-10-13, updated 05-13-13 */
+.list-links {
+  font-size: 1.2em;
+}
+.list-links li {
+  font-weight: 300;
+  line-height: 150%;
+}
+.list-links li span {
+  font-weight: 600;
+  line-height: 150%;
+  color: #444444;
+}
+.line-height-100 {
+  line-height: 100% !important;
+}
+
+/* fix for accordion spacing when within row-fluid */
+.accordion {
+  margin-bottom: 1em;
+} 
+.accordion div {
+  margin-bottom: 0;
+} 
+.accordion-inner {
+  border-top: 0px solid #E5E5E5;
+}
+.accordion-group {
+  margin-bottom: .5em !important;
+}
+
+.well {
+  background-color: #D9E9EB;
+  border: 1px solid #D9E9EB;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 93.75%
+}
+h1, h2, h3 {
+  font-weight: 300;
+}
+h4, h5, h6 {
+  font-weight: 400;
+}
+p {
+  line-height: 150%;
+}
+.user-name {
+  font-weight: 600;
+  color: #333333;
+}
+.font11 {
+  font-size: 1.1em;
+}
+.font12 {
+  font-size: 1.2em;
+}
+.font13 {
+  font-size: 1.3em;
+}
+.font14 {
+  font-size: 1.4em;
+}
+
+.hide {
+  display: none;
+}
+.margin-bottom {
+  margin-bottom: 10px;
+}
+.small-right {
+  width: 20px;
+}
+
+.extra-top-margin {
+  margin-top: 25px;
+}
+.small-top-margin {
+  margin-top: 10px;
+}
+.hawaii-gov {
+  font-size: 1.2em;
+}
+
+/*
+** ================================================
+**  $PAGES
+** ================================================ 
+*/
+
+.lbl {
+  font-weight: 700;
+  padding-bottom: 0;
+}
+.table-toggle tr {
+  cursor: pointer;
+}
+.on {
+  background-color: #c4eac2;
+  /*
+  border-bottom: 1px solid #900 !important;*/
+
+}
+.on td {
+  border-top: 1px solid #9acf96 !important;
+}
+.loading {
+  margin-left: 15px;
+}
+
+.accordion .active {
+  background-color: #eee;
+}
+.accordion .accordion-heading a {
+  font-size: 16px;
+  /*font-weight: bold;*/
+  text-decoration: none;
+}
+
+.nav-tabs a {
+  text-decoration: none !important;
+}
+.no-bottom-margin {
+  margin-bottom: 0;
+}
+
+
+/*
+** ================================================
+**  $ADDED RESPONSIVE STYLES
+** ================================================ 
+*/
+
+@media (min-width: 1px) {
+
+  .site-header {
+    background-image: none;
+    background-color: transparent;
+    margin: 0 0 1em;
+    padding: 0;
+    height: auto;
+  }
+  .header-secondary {
+    font-size: 1.2em;
+    color: #555555;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  body {
+    background: #b6ceff;
+  }
+  .site-header {
+    background-image: none;
+  }
+  .site-header h1 {
+    color: #000000;
+    font-size: 1.6em;
+    line-height: 100%;
+  }
+  .site-header h2 {
+    font-size: 1.2em;
+    color: #333333; 
+    line-height: 100%;
+  }
+  .site-header h3 {
+    font-size: 1.1em;
+    color: #333333;
+    line-height: 100%;
+  }
+  .main h1 {
+    font-size: 1.6em;
+  }
+  .main h2 {
+    font-size: 1.4em;
+  }
+  .main h3 {
+    font-size: 1.2em;
+  }
+  .main h4, .main h5, .main h6 {
+    font-size: 1.1em;
+  }
+  .mobile-right-left {
+    text-align: left !important;
+  }
+  /* added 07-31-13 */
+  .off-canvas-header {
+    height: 95px;
+  }
+
+}
+
+@media (min-width: 601px) {
+
+  .site-header {
+    padding: 0;
+    height: 7.5em;
+  }
+
+  .site-header h1 {
+    font-size: 1.8em;
+    color: #000; 
+  }
+  .site-header h2 {
+    font-size: 1.4em;
+    color: #333333;
+    margin-left: .1em;
+  }
+  .site-header h3 {
+    font-size: 1.2em;
+    color: #333333;
+  }
+
+  .main h1 {
+    font-size: 2em;
+  }
+  .main h2, .main h3 {
+    font-size: 1.8em;
+  }
+  .main h3 {
+    font-size: 1.5em;
+  }
+  .main h4, .main h5, .main h6 {
+    font-size: 1.2em;
+  }
+  footer {
+    margin-top: 15px;
+    padding: 15px;
+  }
+
+}
+
+@media (min-width: 767px) {
+
+  .site-header {
+    background: $transparent;
+    margin: 4em 0 1em;
+  }
+
+  .site-header h1 {
+    font-size: 1.8em;
+    color: #000000; 
+  }
+  .site-header h2 {
+    font-size: 1.6em;
+    color: #333333;
+  }
+  .site-header h3 {
+    font-size: 1.3em;
+    color: #333333;
+  }
+
+
+  .header-secondary {
+    font-size: 1.3em;
+    color: #eeeeee;
+    text-align: right;
+    margin-top: .5em;
+  }
+
+  .mobile-right-left {
+    text-align: right !important;
+  }
+   /* added 07-31-13 */
+  .off-canvas-header {
+    height: 40px;
+  }
+  .modal-wide {
+    left: 50%;
+    margin-left: -45%;
+    top: 10%;
+    width: 90%;
+  }
+
+}
+
+
+@media (min-width: 1079px) {
+
+  body {
+    background-color: #b6ceff;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;     
+  }
+
+  .site-header h1 {
+    font-size: 2.2em;
+    color: #000000; 
+  }
+  .site-header h2 {
+    font-size: 1.6em;
+    color: #333333;
+  }
+  .site-header h3 {
+    font-size: 1.3em;
+    color: #333333;
+  }
+}
+
+.error {
+  border-color: #900 !important;
+  background: #F5EBEB !important;
+}
+label.error {
+  background: none !important;
+  color: #900;
+}
+span.error {
+  background: none !important;
+  margin-left: .5em;
+  color: #900;
+}
+/* getting padding crazy */
+
+.extra-margin .row-fluid {
+  margin-bottom: .75em !important;
+  margin-top: .2em !important;
+}
+.accordion.extra-padding .accordion-heading a {
+  padding: 1em;
+  font-weight: 700;
+}
+.accordion .accordion-heading a:hover {
+  text-decoration: none !important;
+}
+/*.extra-padding .row-fluid input, .extra-padding .row-fluid select {
+  padding: 1.25em .75em !important;
+}*/
+.extra-padding .btn {
+  padding: .5em 1em !important;
+}
+
+a.no-underline {
+  text-decoration: none !important;
+}
+
+
+#table tr.selected {
+  background: #D4F2C7;
+}
+
+
+.sorting_disabled i {
+  display: none;
+}
+
+

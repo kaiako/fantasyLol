@@ -1,11 +1,15 @@
 package com.fantasyLoL.domain
 
-import List;
-
 class League {
 	
-	private Long league_id;
-	private String name;
-	private List<Team> teams;
+	Long league_id;
+	String name;
+	List<Team> teams;
+	Settings settings;
+	
+	def calculatePoints(Team team){
+		double total=0.0;
+		
+	}
 
 }
