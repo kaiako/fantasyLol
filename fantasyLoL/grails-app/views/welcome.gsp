@@ -25,7 +25,7 @@
             </div>
             <div class="collapse navbar-collapse" id="#collapse-main-menu">
             	<ul class="nav navbar-nav">
-		                <li class="active"><a href="#">User Homepage</a></li>
+		                <li><a href="userHomePage">User Homepage</a></li>
 		                <li><a href="#">Team Page</a></li>
 		                <li><a href="#">League Page</a></li>
 		                <li><a href="#">Player Page</a></li>
@@ -76,6 +76,13 @@
 	        <a class="right carousel-control" href="#myCarousel" data-slide="next">
 	                    <span class="glyphicon glyphicon-chevron-right"></span>
 	    	</a>
+       	</div>
+       	
+       	<div class="info">
+       		<p>
+       			Welcome to eFantasySports
+       				This sit
+       		</p>
        	</div>
 		       	
 	</content>
