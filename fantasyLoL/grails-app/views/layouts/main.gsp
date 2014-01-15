@@ -70,7 +70,13 @@
           </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->  
         
-		<g:pageProperty name="page.main"/>
+        <div class="headder" role="header">
+			<g:pageProperty name="page.header"/>
+        </div>
+		
+	    <div class="main" role="main">  
+			<g:pageProperty name="page.main"/>
+		</div>
 	    
 		<div class="footer" role="contentinfo">		
               <p class="text-center">Kaiako Gaming &copy; 2013</p>
