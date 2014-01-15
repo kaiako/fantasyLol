@@ -10,6 +10,6 @@ class UrlMappings {
 		"/"(view:"/index")
 		"500"(view:'/error')
 		"/welcome"(view:"/welcome")
-		"/userhomepage"(view:"/userHomePage")
+		"/userHomePage"(view:"/userHomePage")
 	}
 }
