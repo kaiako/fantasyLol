@@ -12,8 +12,8 @@
 	    <link href="css/main.css" rel="stylesheet">
 	    <!-- Bootstrap -->
 	    <link href="css/bootstrap.css" rel="stylesheet">
+	    <link href="css/custom.css" rel="stylesheet">  
 <%--	    <link href="css/bootstrap-modified.min.css" rel="stylesheet">--%>
-<%--	    <link href="css/custom.css" rel="stylesheet">	    --%>
 <%--	    <link href="css/style-v2.css" rel="stylesheet">--%>
 	    <script src="js/respond.js"></script>
 		<g:layoutHead/>

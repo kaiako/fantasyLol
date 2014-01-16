@@ -9,15 +9,49 @@
 <body>
 	<div style="width:100%;" class="container">
     	<content tag="main">
-    		
     	
+    		<!-- users profile/win/loss -->
+    		<div class="row">
+	    		<div class="col-lg-3 col-sm-3">
+	        		<img src="img/Hershey.jpg" id="profilePic" alt="ProfilePic" class="hidden-xs img-responsive pull-left">
+	        	</div>
+	        	<div class="col-lg-1 col-lg-offset-2 well well-sm" align="center">
+	        	<h2>0</h2>
+	        	</div>
+	        	<div class="col-lg-3 ">
+	        		<h2 align="center">HolyCrap11<br>
+	        		Overall Win-Loss</h2>
+	        	</div>
+	        	<div class="col-lg-1 well well-sm" align="center">
+	        	<h2>100</h2>
+	        	</div>
+    		</div>
+    		
+    		<!-- player search bar -->
+
+					<div class="row">
+				        <div class="col-lg-5 col-lg-offset-8">
+				            <form id="custom-search-form" class="form-search form-horizontal">
+				                <div class="input-group col-lg-4">
+				                    <input type="text" class="search-query" placeholder="Search Players">
+				                    <span class="input-group-btn">
+	                                    <button type="submit" class="btn btn-default search-btn">
+	                                    	<span class="glyphicon glyphicon-search"></span>
+	                                    </button>
+                                	</span>
+				                </div>
+				            </form>
+				        </div>
+					</div>
+
+    		
 	    	<!-- user's team pages -->
 		    	<div class="panel-group" id="accordion">
 				  <div class="panel panel-default">
 				    <div class="panel-heading">
 				      <h4 class="panel-title">
 				        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-				          Team 1 - in League blah-blah
+				          TEAM NAME
 				        </a>
 				      </h4>
 				    </div>
@@ -34,7 +68,7 @@
 					            <th>Towers Lost</th> 
 					            <th>Win/Loss</th> 
 					          </tr>  
-					        </thead>  
+					        </thead>
 					        <tbody>  
 					          <tr><!-- da table -->
 					           <th></th>
@@ -46,7 +80,7 @@
 					           <th></th> 
 					          </tr>  
 					        </tbody>  
-					      </table>
+					   </table>
 				      </div>
 				    </div>
 				  </div>

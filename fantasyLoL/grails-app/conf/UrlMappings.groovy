@@ -11,5 +11,6 @@ class UrlMappings {
 		"500"(view:'/error')
 		"/welcome"(view:"/welcome")
 		"/userHomePage"(view:"/userHomePage")
+		"/leaguePage"(view:"/leaguePage")
 	}
 }
