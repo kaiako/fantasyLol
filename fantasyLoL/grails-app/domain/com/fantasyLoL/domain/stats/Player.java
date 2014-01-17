@@ -4,6 +4,6 @@ import com.fantasyLoL.domain.PointSetting;
 
 public interface Player {
 	
-	public double calculateScore(PointSetting setting);
+	public void calculateScore(PointSetting setting);
 
 }

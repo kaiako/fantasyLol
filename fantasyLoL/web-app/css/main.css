@@ -49,8 +49,17 @@ body {
 
 .main {
 	background: #CCCCCC !important;
-	margin-top: 200px;
-	padding: 40px 15px 40px 15px;
+	padding: 20px 15px 40px 15px;
+}
+
+div.header {	
+	font-weight : bold;
+	font-size : 3em;
+	color: black;
+	margin: 50px 0px 50px 0px ;
+	padding: 30px 10px 30px 10px ;
+	background: #CCCCCC;
+	opacity: 0.5;
 }
 
 #grailsLogo {
@@ -79,10 +88,7 @@ a:hover, a:active {
 }
 
 h1 {
-	color: #48802c;
-	font-weight: normal;
-	font-size: 1.25em;
-	margin: 0.8em 0 0.3em 0;
+	font-size: 3em;
 }
 
 ul {

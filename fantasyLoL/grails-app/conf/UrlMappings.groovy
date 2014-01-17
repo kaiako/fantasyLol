@@ -7,10 +7,8 @@ class UrlMappings {
 			}
 		}
 
-		"/"(view:"/index")
+		"/"(controller: 'home')
 		"500"(view:'/error')
-		"/welcome"(view:"/welcome")
-		"/userHomePage"(view:"/userHomePage")
-		"/leaguePage"(view:"/leaguePage")
+//		"/player "(controller: 'home', action: 'player')
 	}
 }

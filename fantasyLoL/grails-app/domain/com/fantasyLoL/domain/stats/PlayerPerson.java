@@ -1,6 +1,7 @@
 package com.fantasyLoL.domain.stats;
 
 import com.fantasyLoL.domain.PointSetting;
+import com.fantasyLoL.domain.Profile;
 import com.fantasyLoL.domain.enums.Positions;
 
 public class PlayerPerson implements Player{
@@ -13,14 +14,15 @@ public class PlayerPerson implements Player{
 	private int deaths;
 	private int assists;
 	private int cs;
+	private double score;
+	private Profile profile;
 	
-	public double calculateScore(PointSetting setting){
-		double score = 0.0;
-		score += kills * setting.getKill();
-		score += deaths * setting.getDeath();
-		score += assists * setting.getAssist();
-		score += cs * setting.getCs();
-		return score;		
+	public void calculateScore(PointSetting setting){
+		this.score = 0.0;
+		this.score += kills * setting.getKill();
+		this.score += deaths * setting.getDeath();
+		this.score += assists * setting.getAssist();
+		this.score += cs * setting.getCs();		
 	}
 
 	public String getName() {
@@ -85,5 +87,21 @@ public class PlayerPerson implements Player{
 
 	public void setCs(int cs) {
 		this.cs = cs;
+	}
+
+	public double getScore() {
+		return score;
+	}
+
+	public void setScore(double score) {
+		this.score = score;
+	}
+
+	public Profile getProfile() {
+		return profile;
+	}
+
+	public void setProfile(Profile profile) {
+		this.profile = profile;
 	}
 }

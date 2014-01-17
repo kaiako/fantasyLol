@@ -9,13 +9,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title><g:layoutTitle default="Grails"/></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <link href="css/main.css" rel="stylesheet">
-	    <!-- Bootstrap -->
-	    <link href="css/bootstrap.css" rel="stylesheet">
-	    <link href="css/custom.css" rel="stylesheet">  
-<%--	    <link href="css/bootstrap-modified.min.css" rel="stylesheet">--%>
-<%--	    <link href="css/style-v2.css" rel="stylesheet">--%>
-	    <script src="js/respond.js"></script>
+		<r:require modules="core, jquery, bootstrap"/>
 		<g:layoutHead/>
 		<r:layoutResources />
 	</head>
@@ -32,7 +26,7 @@
 	                    <span class="icon-bar"></span>
 	                </button>
 	            </div>
-	            <a href="#" class="company-name-navbar">eFantasySports</a>
+	            <g:link contoller='home' class="company-name-navbar" >eFantasySports</g:link>
 	            <div class="collapse navbar-collapse" id="collapse">
 	            	<ul class="nav navbar-nav" style="float:right;">
 	                	<li><a href="#"><span class="glyphicon glyphicon-bookmark"></span> League Request</a></li>
@@ -70,7 +64,7 @@
           </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->  
         
-        <div class="headder" role="header">
+        <div class="header" role="header">
 			<g:pageProperty name="page.header"/>
         </div>
 		
@@ -82,9 +76,6 @@
               <p class="text-center">Kaiako Gaming &copy; 2013</p>
 		</div>
 		
-		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    	<script src="js/bootstrap.min.js"></script>
-		<g:javascript library="application"/>
 		<script>
 			function loginModal(){
 				$('#loginModal').modal('show');			
