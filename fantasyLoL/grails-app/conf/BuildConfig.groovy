@@ -17,7 +17,7 @@ grails.project.dependency.resolution = {
         // specify dependency exclusions here; for example, uncomment this to disable ehcache:
         // excludes 'ehcache'
     }
-    log "error" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
+    log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     checksums true // Whether to verify checksums on resolve
     legacyResolve false // whether to do a secondary resolve on plugin installation, not advised and here for backwards compatibility
 
@@ -30,6 +30,8 @@ grails.project.dependency.resolution = {
 
         mavenLocal()
         mavenCentral()
+		
+		mavenRepo 'http://repo.spring.io/milestone'
 
         // uncomment these (or add new ones) to enable remote dependency resolution from public Maven repositories
         //mavenRepo "http://snapshots.repository.codehaus.org"
@@ -62,5 +64,7 @@ grails.project.dependency.resolution = {
         compile ':cache:1.0.1'
 		
 		compile ":twitter-bootstrap:3.0.3"
+		
+		compile ':spring-security-core:2.0-RC2'
     }
 }

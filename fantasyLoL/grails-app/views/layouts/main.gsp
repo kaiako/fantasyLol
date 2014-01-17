@@ -33,7 +33,10 @@
 	                	<li><a href="#"><span class="glyphicon glyphicon-user"></span> Trade Request</a></li>
 	                	<li><a href="#"><span class="glyphicon glyphicon-envelope"></span> New Message</a></li>
 	                	<li><a href="#"><span class="glyphicon glyphicon-tasks"></span> Draft Soon</a></li>
-                		<li ><a href="javascript:loginModal();" > Login</a></li>
+                		<li >
+                			<sec:ifLoggedIn><a href="javascript:loginModal();" > Login</a></sec:ifLoggedIn>
+                			<sec:ifNotLoggedIn><g:link controller="logout">Logout</g:link></sec:ifNotLoggedIn>
+                		</li>
 	                </ul>
             </div>
             </div>
@@ -46,20 +49,13 @@
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">x</button>
                     <h3>Login to FantasyLCS</h3>
-                  </div>
-              <div class="modal-body">
-                <form method="post" action='' name="login_form">
-                  <p><input type="text" class="span3" name="eid" id="email" placeholder="Email"></p>
-                  <p><input type="password" class="span3" name="passwd" placeholder="Password"></p>
-                  <p><button type="submit" class="btn btn-primary">Sign in</button>
-                    <a href="#">Forgot Password?</a>
-                  </p>
-                </form>
+              </div>
+              <div id="modalViewPort" class="modal-body">
+              	Hello
               </div>
               <div class="modal-footer">
-                    New To FantasyLCS?
-                    <a href="#" class="btn btn-primary">Register</a>
-                  </div>
+              	Footer
+              </div>
             </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->  
@@ -78,6 +74,12 @@
 		
 		<script>
 			function loginModal(){
+				$.ajax({
+				  url: "${createLink(controller : 'Ajax', action: 'auth')}",
+				  context: document.body
+				}).done(function(result) {
+				  $('#modalViewPort' ).html(result);
+				});
 				$('#loginModal').modal('show');			
 			};
 		</script>
