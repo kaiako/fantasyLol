@@ -26,7 +26,7 @@
 	                    <span class="icon-bar"></span>
 	                </button>
 	            </div>
-	            <g:link contoller='home' class="company-name-navbar" >eFantasySports</g:link>
+	            <g:link controller='home' class="company-name-navbar" >eFantasySports</g:link>
 	            <div class="collapse navbar-collapse" id="collapse">
 	            	<ul class="nav navbar-nav" style="float:right;">
 	                	<li><a href="#"><span class="glyphicon glyphicon-bookmark"></span> League Request</a></li>
@@ -34,8 +34,8 @@
 	                	<li><a href="#"><span class="glyphicon glyphicon-envelope"></span> New Message</a></li>
 	                	<li><a href="#"><span class="glyphicon glyphicon-tasks"></span> Draft Soon</a></li>
                 		<li >
-                			<sec:ifLoggedIn><a href="javascript:loginModal();" > Login</a></sec:ifLoggedIn>
-                			<sec:ifNotLoggedIn><g:link controller="logout">Logout</g:link></sec:ifNotLoggedIn>
+                			<sec:ifNotLoggedIn><a href="javascript:loginModal();" > Login</a></sec:ifNotLoggedIn>
+                			<sec:ifLoggedIn><g:link controller="logout">Logout</g:link></sec:ifLoggedIn>
                 		</li>
 	                </ul>
             </div>
